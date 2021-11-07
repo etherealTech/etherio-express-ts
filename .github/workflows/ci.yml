@@ -16,8 +16,8 @@ jobs:
           git config --global user.email "ethereal97@gmail.com"
           git config --global user.name "Ethereal"
       - run: |
-          npm i ts-path-mapping @types/express -D
-          npx tsc --init
+          npm run build
+          ls -l dist
       - name: Push Changes
         run: |
           git add --all
