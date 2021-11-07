@@ -1,0 +1,30 @@
+{
+  "name": "etherio-express-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etherealTech/etherio-express-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/etherealTech/etherio-express-ts/issues"
+  },
+  "homepage": "https://github.com/etherealTech/etherio-express-ts#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.14",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
+}
