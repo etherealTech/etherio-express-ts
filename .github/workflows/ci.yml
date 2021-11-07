@@ -1,0 +1,26 @@
+name: CI
+on:
+  workflow_dispatch:
+    inputs:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Git Configure
+        run: |
+          git config --global user.email "ethereal97@gmail.com"
+          git config --global user.name "Ethereal"
+      - run: |
+          npm init -y
+          npm i express
+          npm i dotenv nodemon typescript ts-node morgan -D
+      - name: Push Changes
+        run: |
+          git add --all
+          git commit -m "[PUSH_CHANGES] From Github Workflow"
+          git push origin main
