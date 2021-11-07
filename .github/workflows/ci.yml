@@ -16,8 +16,10 @@ jobs:
           git config --global user.email "ethereal97@gmail.com"
           git config --global user.name "Ethereal"
       - run: |
-          npm run build
+          npm i && npm run build
           ls -l dist
+          echo "- - - - - - - -"
+          cat dist/main.js
       - name: Push Changes
         run: |
           git add --all
