@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/etherealTech/etherio-express-ts#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
