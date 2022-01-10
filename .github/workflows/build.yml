@@ -2,7 +2,7 @@ name: Build
 on:
   workflow_dispatch:
 # push:
-#   branches: [master]
+#   branches: [main]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,7 +19,7 @@ jobs:
         run: |
           git config --global user.email "ethereal97@gmail.com"
           git config --global user.name "CI"
-          git checkout --orphan main
+          git checkout --orphan production
           git add -f dist
           git commit -m "[+] added build output directory"
-          git push -f origin main
+          git push -f origin production
